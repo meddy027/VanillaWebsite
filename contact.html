@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body id="contact-body">
+    <img class="future-contact-img" src="./public/Assets/general-4.jpeg" alt="future" width="100%" height="100%">
+    <nav class="nav-bar">
+        <div id="bars-container" onclick="toggleBars(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="nav-links">
+            <div>
+                <a class="alink" href="index.html">Home</a>
+            </div>
+            <div>
+                <a class="alink" href="about.html">About</a>
+            </div>
+            <div>
+                <a class="alink" href="portfolio.html">Portfolio</a>
+            </div>
+            <div>
+                <a class="alink" href="contact.html">Contact</a>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <div class="contact-layout-container">
+            <div class="basic-info">
+                <h1>My Contact Info</h1>
+                <h2>Phone: +1 (123) 456-7890</h1>
+                <h2>Email: contactiamb@tman.com</h2>
+                <h2>25800 Carlos Bee Blvd, Hayward, CA 94542</h2>
+
+            </div>
+            <form id="contact-form">Want to Ask a Question?<br>Fill out the form below
+                <label for="fname" class="guest-contact"></label>
+                <input type="text" id="fname" name="fname" required placeholder="First">
+                
+                <label for="lname" class="guest-contact"></label>
+                <input type="text" id="lname" name="lname" required placeholder="Last">
+                
+                <label for="email" class="guest-contact"></label>
+                <input type="email" id="email" name="email" required placeholder="Email">
+                
+                <label for="tel" class="guest-contact"></label>
+                <input type="tel" id="tel" name="tel" required placeholder="###-###-####">
+                
+                <textarea rows="4" cols="50" name="comment" form="contact-form" required placeholder="Enter message description"></textarea>
+                <button class="submit-button" type="submit">Send</button>
+            </form>
+
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
